@@ -31,7 +31,7 @@
       buildInputs = with pkgs; [
         libadwaita
         cmake
-        (pkgs.stdenv.mkDerivation {
+        (pkgs.stdenv.mkDerivation rec {
           pname = "tbb";
           version = "2021.5.0";
           src = pkgs.fetchFromGitHub {
